@@ -217,3 +217,86 @@ body {
     font-size: 0.9rem;
   }
 }
+
+/* ========== Small Hero for Inner Pages ========== */
+.small-hero {
+  height: 55vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.small-hero .hero-content h2 {
+  font-size: 2rem;
+  color: #F9F1D1;
+}
+
+/* ========== Quote Section ========== */
+.quote {
+  background: linear-gradient(to right, #9A3F3F, #C1856D);
+  color: #F9F1D1;
+  text-align: center;
+  padding: 80px 20px;
+  font-family: "Playfair Display", serif;
+  border-top: 3px solid #E6CFA9;
+  border-bottom: 3px solid #E6CFA9;
+}
+
+.quote blockquote {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin: 0 auto;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.quote .author {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #E6CFA9;
+}
+
+/* ========== Character Page Styles ========== */
+.char-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #C1856D;
+}
+
+/* Optional: subtle hover glow on cards */
+.card:hover .char-img {
+  filter: brightness(1.05);
+  box-shadow: 0 0 10px rgba(193,133,109,0.4);
+}
+
+/* Active nav link highlight */
+.nav-links .active {
+  border-bottom: 2px solid #E6CFA9;
+}
+
+/* ========== Pandava Profiles ========== */
+.card h4 {
+  margin-top: 10px;
+}
+
+.card p strong {
+  color: #9A3F3F;
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+/* Character images in Pandava page */
+.char-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #C1856D;
+  margin-bottom: 15px;
+}
