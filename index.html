@@ -3,132 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahabharata - The Eternal Epic</title>
+  <title>The Mahabharata – Royal Legacy</title>
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Merriweather&display=swap" rel="stylesheet">
 
-  <!-- Favicon -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
   <link rel="icon" type="image/png" href="assets/images/logo.png" />
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-
-  <style>
-    body {
-      background-color: #FFF8E7;
-      font-family: 'Merriweather', serif;
-    }
-  </style>
 </head>
 
-<body class="text-[#4B1E1E]">
-
-  <!-- 🌺 Navbar -->
-  <header class="bg-[#1E3A8A] text-[#FFD700] shadow-md fixed w-full top-0 z-50">
-    <nav class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold">Mahabharata</h1>
-
-      <!-- Hamburger Icon -->
-      <button id="menu-toggle" class="md:hidden text-[#FFD700] focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-
-      <!-- Menu Links -->
-      <ul id="menu" class="hidden md:flex gap-6 text-sm font-semibold">
-        <li><a href="index.html" class="hover:text-[#FF9933]">Home</a></li>
-        <li><a href="about/about-mahabharata.html" class="hover:text-[#FF9933]">About</a></li>
-        <li><a href="characters/pandavas.html" class="hover:text-[#FF9933]">Characters</a></li>
-        <li><a href="teachings/teachings-morals.html" class="hover:text-[#FF9933]">Teachings</a></li>
-        <li><a href="gallery/artworks.html" class="hover:text-[#FF9933]">Gallery</a></li>
-        <li><a href="quiz/quiz.html" class="hover:text-[#FF9933]">Quiz</a></li>
-        <li><a href="chatbot/chatbot.html" class="hover:text-[#FF9933]">Chatbot</a></li>
-        <li><a href="contact/about-creator.html" class="hover:text-[#FF9933]">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- Mobile Dropdown Menu -->
-    <div id="mobile-menu" class="hidden bg-[#1E3A8A] md:hidden">
-      <ul class="flex flex-col items-center py-4 space-y-3">
-        <li><a href="index.html" class="hover:text-[#FF9933]">Home</a></li>
-        <li><a href="about/about-mahabharata.html" class="hover:text-[#FF9933]">About</a></li>
-        <li><a href="characters/pandavas.html" class="hover:text-[#FF9933]">Characters</a></li>
-        <li><a href="teachings/teachings-morals.html" class="hover:text-[#FF9933]">Teachings</a></li>
-        <li><a href="gallery/artworks.html" class="hover:text-[#FF9933]">Gallery</a></li>
-        <li><a href="quiz/quiz.html" class="hover:text-[#FF9933]">Quiz</a></li>
-        <li><a href="chatbot/chatbot.html" class="hover:text-[#FF9933]">Chatbot</a></li>
-        <li><a href="contact/about-creator.html" class="hover:text-[#FF9933]">Contact</a></li>
-      </ul>
+<body>
+  <!-- 🌺 NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">The Mahabharata</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about/about-mahabharata.html">About</a></li>
+          <li><a href="characters/pandavas.html">Characters</a></li>
+          <li><a href="teachings/teachings-morals.html">Teachings</a></li>
+          <li><a href="gallery/artworks.html">Gallery</a></li>
+          <li><a href="quiz/quiz.html">Quiz</a></li>
+          <li><a href="chatbot/chatbot.html">Chatbot</a></li>
+          <li><a href="contact/about-creator.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- 🪔 Hero Section -->
-  <section class="relative bg-cover bg-center h-[90vh] mt-[72px]" style="background-image: url('assets/images/banner.jpg');">
-    <div class="absolute inset-0 bg-black/50"></div>
-    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-[#FFD700] px-4">
-      <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold drop-shadow-lg">The Mahabharata</h2>
-      <p class="mt-4 max-w-2xl text-base sm:text-lg text-[#F2E7C9]">
-        "Where there is Dharma, there is victory." — Vyasa
-      </p>
-      <a href="about/about-mahabharata.html"
-         class="mt-8 px-6 py-3 bg-[#FF9933] text-white font-semibold rounded-full hover:bg-[#FFD700] transition">
-         Begin the Journey
-      </a>
+  <!-- 🪷 HERO -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>“In the battle of truth and illusion, Dharma is the only victory.”</h2>
+      <p>— Vyasa, Mahabharata</p>
+      <a href="about/about-mahabharata.html" class="btn">Enter the Epic</a>
     </div>
   </section>
 
-  <!-- 📖 Intro Section -->
-  <section class="py-16 bg-[#F2E7C9] text-center px-6">
-    <div class="container mx-auto">
-      <h3 class="text-3xl font-bold text-[#1E3A8A] mb-4">About the Eternal Epic</h3>
-      <p class="text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
-        The Mahabharata is not merely a tale of kings and battles — it is the song of life, dharma, and destiny.
-        Dive into the 18 Parvas, explore the paths of Pandavas and Kauravas, and learn timeless lessons of duty, truth, and karma.
+  <!-- 📜 INTRO -->
+  <section class="intro">
+    <div class="container">
+      <h3>About the Sacred Chronicle</h3>
+      <p>
+        The Mahabharata is India’s grandest epic — a divine dialogue between duty and desire, wisdom and war. 
+        Every verse echoes the eternal truth of Dharma and the impermanence of power.
       </p>
     </div>
   </section>
 
-  <!-- ⚔️ Sections Overview -->
-  <section class="py-16 bg-[#FFD700]/10 px-6">
-    <div class="container mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
-      <div class="bg-white shadow-lg rounded-2xl p-6 hover:scale-105 transition">
-        <h4 class="text-2xl font-semibold text-[#1E3A8A] mb-2">Characters</h4>
-        <p>Meet the heroes, villains, and divine beings who shaped the destiny of Bharat.</p>
-        <a href="characters/pandavas.html" class="text-[#FF9933] font-semibold mt-2 inline-block">Explore →</a>
+  <!-- ⚔️ HIGHLIGHTS -->
+  <section class="sections">
+    <div class="container grid">
+      <div class="card">
+        <h4>Characters</h4>
+        <p>The warriors and divine souls whose choices defined Bharat’s destiny.</p>
+        <a href="characters/pandavas.html" class="link">Explore →</a>
       </div>
-
-      <div class="bg-white shadow-lg rounded-2xl p-6 hover:scale-105 transition">
-        <h4 class="text-2xl font-semibold text-[#1E3A8A] mb-2">Teachings</h4>
-        <p>Discover the eternal wisdom of Dharma, Karma, and life’s purpose from the epic’s heart.</p>
-        <a href="teachings/teachings-morals.html" class="text-[#FF9933] font-semibold mt-2 inline-block">Read →</a>
+      <div class="card">
+        <h4>Teachings</h4>
+        <p>Unveil timeless lessons of Dharma, Karma, and inner equilibrium.</p>
+        <a href="teachings/teachings-morals.html" class="link">Read →</a>
       </div>
-
-      <div class="bg-white shadow-lg rounded-2xl p-6 hover:scale-105 transition">
-        <h4 class="text-2xl font-semibold text-[#1E3A8A] mb-2">Voice of Mahabharata</h4>
-        <p>Ask the Mahabharata itself — powered by Gemini AI. Seek divine answers in conversation.</p>
-        <a href="chatbot/chatbot.html" class="text-[#FF9933] font-semibold mt-2 inline-block">Chat →</a>
+      <div class="card">
+        <h4>Voice of Mahabharata</h4>
+        <p>Converse with the epic itself — the Gemini-powered scroll of wisdom.</p>
+        <a href="chatbot/chatbot.html" class="link">Chat →</a>
       </div>
     </div>
   </section>
 
-  <!-- 🌿 Footer -->
-  <footer class="bg-[#4B1E1E] text-[#F2E7C9] py-6 text-center px-4">
-    <p>© 2025 Mahabharata Website | Crafted by Anchal Gupta 🪷</p>
-    <p class="text-sm mt-2">Inspired by the eternal wisdom of Vyasa’s Mahabharata</p>
+  <!-- 🌿 FOOTER -->
+  <footer class="footer">
+    <p>© 2025 The Mahabharata Website | Crafted by Anchal Gupta 🪷</p>
+    <p class="note">Honouring the divine legacy of Sage Vyasa</p>
   </footer>
-
-  <!-- 📜 Script for Navbar Toggle -->
-  <script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const mobileMenu = document.getElementById("mobile-menu");
-
-    menuToggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  </script>
-
 </body>
 </html>
