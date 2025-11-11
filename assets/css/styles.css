@@ -300,3 +300,367 @@ body {
   border: 2px solid #C1856D;
   margin-bottom: 15px;
 }
+
+.card p strong {
+  color: #9A3F3F;
+}
+
+.card:hover .char-img {
+  filter: brightness(1.05);
+  box-shadow: 0 0 10px rgba(193,133,109,0.4);
+}
+
+/* ========== Teachings Page ========== */
+.teachings-grid .card {
+  background: #F9F1D1;
+  border: 2px solid #C1856D;
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.teachings-grid .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.teachings-grid h4 {
+  font-family: "Playfair Display", serif;
+  color: #9A3F3F;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.teachings-grid p {
+  color: #4B1E1E;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.teachings-grid em {
+  color: #C1856D;
+  font-style: italic;
+}
+
+.teachings-grid strong {
+  color: #9A3F3F;
+}
+
+@media (max-width: 768px) {
+  .teachings-grid .card {
+    padding: 20px;
+  }
+  .teachings-grid h4 {
+    font-size: 1.1rem;
+  }
+}
+
+/* ========== Gallery Page ========== */
+.gallery-section {
+  background: #F9F1D1;
+  padding: 70px 0;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.gallery-item {
+  position: relative;
+  background: #E6CFA9;
+  border: 3px solid #C1856D;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 2px solid #C1856D;
+}
+
+.gallery-item p {
+  padding: 15px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #4B1E1E;
+  font-family: "Merriweather", serif;
+}
+
+@media (max-width: 768px) {
+  .gallery-item img {
+    height: 200px;
+  }
+  .gallery-item p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ========== Quiz Page ========== */
+.quiz-section {
+  background: #F9F1D1;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.quiz-intro {
+  font-size: 1rem;
+  color: #4B1E1E;
+  margin-bottom: 30px;
+}
+
+.quiz-form {
+  background: #E6CFA9;
+  border: 3px solid #C1856D;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.quiz-question {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.quiz-question h4 {
+  font-family: "Playfair Display", serif;
+  color: #9A3F3F;
+  margin-bottom: 8px;
+}
+
+.quiz-question label {
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.quiz-result {
+  margin-top: 25px;
+  background: #F9F1D1;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #C1856D;
+  color: #4B1E1E;
+  display: none;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .quiz-form {
+    padding: 20px;
+  }
+  .quiz-question h4 {
+    font-size: 1rem;
+  }
+}
+
+/* ========== Chatbot Page ========== */
+.chatbot-section {
+  background: #F9F1D1;
+  padding: 60px 0;
+  min-height: 80vh;
+}
+
+.chat-window {
+  background: #E6CFA9;
+  border: 3px solid #C1856D;
+  border-radius: 10px;
+  padding: 20px;
+  height: 420px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
+}
+
+.bot-message, .user-message {
+  background: #F9F1D1;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #C1856D;
+  max-width: 80%;
+}
+
+.bot-message {
+  background: #F3E1B9;
+  align-self: flex-start;
+}
+
+.user-message {
+  background: #E6CFA9;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.disclaimer {
+  background: #FFF8E0;
+  color: #4B1E1E;
+  font-size: 0.85rem;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px dashed #C1856D;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid #C1856D;
+  font-size: 1rem;
+  background: #FFF9E9;
+}
+
+.chat-input button {
+  background: #9A3F3F;
+  color: #F9F1D1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.chat-input button:hover {
+  background: #C1856D;
+}
+
+@media (max-width: 768px) {
+  .chat-window {
+    height: 350px;
+  }
+}
+
+/* ========== Contact / Creator Page ========== */
+.creator-section {
+  background: #F9F1D1;
+  padding: 70px 0;
+}
+
+.creator-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.creator-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 3px solid #C1856D;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.creator-text h3 {
+  font-family: "Playfair Display", serif;
+  color: #9A3F3F;
+  margin-bottom: 10px;
+}
+
+.creator-text span {
+  color: #C1856D;
+}
+
+.creator-text p {
+  color: #4B1E1E;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  background: #9A3F3F;
+  color: #F9F1D1;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.social-links a:hover {
+  background: #C1856D;
+}
+
+/* 💌 Contact Form */
+.contact-form-section {
+  background: #E6CFA9;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 2px solid #C1856D;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Merriweather", serif;
+}
+
+.contact-form .btn {
+  background: #9A3F3F;
+  color: #F9F1D1;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form .btn:hover {
+  background: #C1856D;
+}
+
+.form-response {
+  margin-top: 10px;
+  color: #4B1E1E;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .creator-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .creator-photo {
+    width: 180px;
+    height: 180px;
+  }
+}

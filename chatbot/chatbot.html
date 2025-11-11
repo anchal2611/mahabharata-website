@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice of Mahabharata – Chatbot</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Merriweather&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+</head>
+
+<body>
+
+  <!-- 🌺 NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">The Mahabharata</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/about-mahabharata.html">About</a></li>
+          <li><a href="../characters/characters.html">Characters</a></li>
+          <li><a href="../teachings/teachings-morals.html">Teachings</a></li>
+          <li><a href="../gallery/artworks.html">Gallery</a></li>
+          <li><a href="../quiz/quiz.html">Quiz</a></li>
+          <li><a href="chatbot.html" class="active">Chatbot</a></li>
+          <li><a href="../contact/about-creator.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🕉️ HERO -->
+  <section class="hero small-hero" style="background-image: url('../assets/images/krishna.jpg');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Voice of Mahabharata</h2>
+      <p>Ask your questions — the wisdom of Vyasa speaks through time</p>
+    </div>
+  </section>
+
+  <!-- 💬 CHATBOT SECTION -->
+  <section class="chatbot-section">
+    <div class="container">
+      <div class="chat-window" id="chatWindow">
+        <div class="bot-message">
+          <strong>Voice of Mahabharata 🕉️:</strong>
+          <p>Welcome, seeker of truth. Ask about Dharma, Karma, or the stories of the Great War.</p>
+        </div>
+        <div class="disclaimer">
+          ⚠️ <strong>Disclaimer:</strong> This chatbot uses AI (Gemini API) and may generate interpretations or 
+          simplified summaries. Please verify facts independently.
+        </div>
+      </div>
+
+      <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask your question..." />
+        <button id="sendBtn">Send</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌿 FOOTER -->
+  <footer class="footer">
+    <p>© 2025 The Mahabharata Website | Crafted by Anchal Gupta 🪷</p>
+    <p class="note">Honouring the divine legacy of Sage Vyasa</p>
+  </footer>
+
+  <!-- JS -->
+  <script type="module" src="chatbot.js"></script>
+</body>
+</html>
 

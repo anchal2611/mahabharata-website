@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About the Creator – Th​e Mahabharata Project</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Merriweather&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+</head>
+
+<body>
+
+  <!-- 🌺 NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">The Mahabharata</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/about-mahabharata.html">About</a></li>
+          <li><a href="../characters/characters.html">Characters</a></li>
+          <li><a href="../teachings/teachings-morals.html">Teachings</a></li>
+          <li><a href="../gallery/artworks.html">Gallery</a></li>
+          <li><a href="../quiz/quiz.html">Quiz</a></li>
+          <li><a href="../chatbot/chatbot.html">Chatbot</a></li>
+          <li><a href="about-creator.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🪷 HERO -->
+  <section class="hero small-hero" style="background-image: url('../assets/images/contact-banner.jpg');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>About the Creator</h2>
+      <p>Crafted with devotion and love for India’s timeless wisdom</p>
+    </div>
+  </section>
+
+  <!-- 👩‍💻 CREATOR INFO -->
+  <section class="creator-section">
+    <div class="container creator-content">
+      <img src="../assets/images/creator.jpg" alt="Creator portrait" class="creator-photo" />
+      <div class="creator-text">
+        <h3>Namaste! I’m <span>Anchal Gupta</span> 🪷</h3>
+        <p>
+          I’m a Computer Science and Engineering student passionate about technology, storytelling,
+          and Indian heritage. This Mahabharata project combines both — code and culture —
+          to bring ancient wisdom into the digital age.
+        </p>
+        <p>
+          My goal is to design interactive experiences that not only inform but also
+          inspire curiosity, faith, and introspection — just as the Mahabharata has inspired me.
+        </p>
+
+        <div class="social-links">
+          <a href="mailto:anchalgupta@example.com" target="_blank">📧 Email</a>
+          <a href="https://github.com/anchal-mahabharata" target="_blank">💻 GitHub</a>
+          <a href="https://www.linkedin.com/in/anchal-gupta" target="_blank">🔗 LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💌 CONTACT FORM -->
+  <section class="contact-form-section">
+    <div class="container">
+      <h3>Send a Message</h3>
+      <p>Have feedback, suggestions, or appreciation? I’d love to hear from you!</p>
+
+      <form class="contact-form" onsubmit="sendMessage(event)">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formResponse" class="form-response"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- 🌿 FOOTER -->
+  <footer class="footer">
+    <p>© 2025 The Mahabharata Website | Crafted by Anchal Gupta 🪷</p>
+    <p class="note">Honouring the divine legacy of Sage Vyasa</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function sendMessage(e) {
+      e.preventDefault();
+      document.getElementById("formResponse").innerText =
+        "📨 Thank you for your message! (Form demo only)";
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
 

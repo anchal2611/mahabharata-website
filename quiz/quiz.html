@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahabharata Quiz – Test Your Wisdom</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Merriweather&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+</head>
+
+<body>
+
+  <!-- 🌺 NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">The Mahabharata</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/about-mahabharata.html">About</a></li>
+          <li><a href="../characters/characters.html">Characters</a></li>
+          <li><a href="../teachings/teachings-morals.html">Teachings</a></li>
+          <li><a href="../gallery/artworks.html">Gallery</a></li>
+          <li><a href="quiz.html" class="active">Quiz</a></li>
+          <li><a href="../chatbot/chatbot.html">Chatbot</a></li>
+          <li><a href="../contact/about-creator.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🪷 HERO -->
+  <section class="hero small-hero" style="background-image: url('../assets/images/quiz-banner.jpg');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Mahabharata Quiz</h2>
+      <p>Test your knowledge of Dharma, heroes, and divine wisdom!</p>
+    </div>
+  </section>
+
+  <!-- 🧭 QUIZ SECTION -->
+  <section class="quiz-section">
+    <div class="container">
+      <h3>Challenge Yourself!</h3>
+      <p class="quiz-intro">Answer the following questions and see how well you know the Mahabharata.</p>
+
+      <form id="quizForm" class="quiz-form">
+
+        <!-- Question 1 -->
+        <div class="quiz-question">
+          <h4>1. Who was the author of the Mahabharata?</h4>
+          <label><input type="radio" name="q1" value="a"> Valmiki</label>
+          <label><input type="radio" name="q1" value="b"> Vyasa</label>
+          <label><input type="radio" name="q1" value="c"> Kalidasa</label>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="quiz-question">
+          <h4>2. What was the name of Arjuna’s bow?</h4>
+          <label><input type="radio" name="q2" value="a"> Gandiva</label>
+          <label><input type="radio" name="q2" value="b"> Pinaka</label>
+          <label><input type="radio" name="q2" value="c"> Saranga</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="quiz-question">
+          <h4>3. Who tried to disrobe Draupadi in the royal court?</h4>
+          <label><input type="radio" name="q3" value="a"> Shakuni</label>
+          <label><input type="radio" name="q3" value="b"> Dushasana</label>
+          <label><input type="radio" name="q3" value="c"> Duryodhana</label>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="quiz-question">
+          <h4>4. Which of the following is a divine weapon given by Lord Shiva to Arjuna?</h4>
+          <label><input type="radio" name="q4" value="a"> Pashupatastra</label>
+          <label><input type="radio" name="q4" value="b"> Brahmastra</label>
+          <label><input type="radio" name="q4" value="c"> Narayanastra</label>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="quiz-question">
+          <h4>5. How many verses approximately does the Mahabharata contain?</h4>
+          <label><input type="radio" name="q5" value="a"> 10,000</label>
+          <label><input type="radio" name="q5" value="b"> 50,000</label>
+          <label><input type="radio" name="q5" value="c"> 100,000</label>
+        </div>
+
+        <button type="button" class="btn" id="submitQuiz">Submit</button>
+
+        <div id="quizResult" class="quiz-result"></div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- 🌿 FOOTER -->
+  <footer class="footer">
+    <p>© 2025 The Mahabharata Website | Crafted by Anchal Gupta 🪷</p>
+    <p class="note">Honouring the divine legacy of Sage Vyasa</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="../assets/js/quiz.js"></script>
+</body>
+</html>
 
