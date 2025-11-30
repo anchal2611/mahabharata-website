@@ -664,3 +664,127 @@ body {
     height: 180px;
   }
 }
+
+/* ========== Summary of 18 Parvas ========== */
+.parvas-section {
+  background: #F9F1D1;
+  padding: 70px 0;
+}
+
+.parvas-section h3 {
+  font-family: "Playfair Display", serif;
+  color: #9A3F3F;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.parvas-section .intro-text {
+  text-align: center;
+  color: #4B1E1E;
+  margin-bottom: 40px;
+  font-family: "Merriweather", serif;
+}
+
+.parva-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.parva-card {
+  background: #E6CFA9;
+  border: 3px solid #C1856D;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.parva-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.parva-card h4 {
+  color: #9A3F3F;
+  margin-bottom: 8px;
+  font-family: "Playfair Display", serif;
+}
+
+.parva-card p {
+  color: #4B1E1E;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .parva-card {
+    padding: 15px;
+  }
+}
+
+/* ========== Timeline Page ========== */
+.timeline-section {
+  background: #F9F1D1;
+  padding: 70px 0;
+}
+
+.timeline-section h3 {
+  text-align: center;
+  color: #9A3F3F;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10px;
+}
+
+.timeline-intro {
+  text-align: center;
+  color: #4B1E1E;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  border-left: 4px solid #C1856D;
+  padding-left: 25px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 15px;
+  height: 15px;
+  background: #9A3F3F;
+  border: 3px solid #E6CFA9;
+  border-radius: 50%;
+  position: absolute;
+  left: -35px;
+  top: 3px;
+}
+
+.timeline-item h4 {
+  color: #9A3F3F;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 5px;
+}
+
+.timeline-item p {
+  color: #4B1E1E;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    margin-left: 10px;
+    padding-left: 20px;
+  }
+}
+
+.timeline-dot {
+  left: -25px;
+} 
